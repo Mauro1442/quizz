@@ -51,10 +51,12 @@ class _QuizPageState extends State<QuizPage> {
           child: Padding(
             padding: EdgeInsets.all(15.0),
             child: TextButton(
+              style: TextButton.styleFrom(
+                backgroundColor: Colors.green,
+              ),
               child: Text(
                 'True',
                 style: TextStyle(
-                  backgroundColor: Colors.green,
                   color: Colors.white,
                   fontSize: 20.0,
                 ),
@@ -69,12 +71,14 @@ class _QuizPageState extends State<QuizPage> {
           child: Padding(
             padding: EdgeInsets.all(15.0),
             child: TextButton(
+              style: TextButton.styleFrom(
+                backgroundColor: Colors.red,
+              ),
               child: Text(
                 'False',
                 style: TextStyle(
                   fontSize: 20.0,
                   color: Colors.white,
-                  backgroundColor: Colors.red,
                 ),
               ),
               onPressed: () {
